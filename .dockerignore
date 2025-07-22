@@ -1,0 +1,16 @@
+# Ambientes virtuais
+venv/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Git
+.git
+.gitignore
+
+# Arquivos do Docker e banco de dados local
+Dockerfile
+docker-compose.yml
+escola.db

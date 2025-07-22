@@ -1,0 +1,15 @@
+# Define os serviços (contêineres) que compõem sua aplicação.
+services:
+  # Nome do nosso serviço da API.
+  api:
+    # Instrui o Compose a construir a imagem a partir do Dockerfile no diretório atual ('.').
+    build: .
+    # Nome do container
+    container_name: api
+    # Mapeia a porta 8000 do seu computador (host) para a porta 8000 do contêiner.
+    ports:
+      - "8000:8000"
+    # Monta o diretório atual ('.') do host no diretório '/app' do contêiner.
+    volumes:
+      - .:/app
+
